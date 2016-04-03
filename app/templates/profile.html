@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+<div class="page">
+  <div class="head">
+    <img src="/static/img/silhouette.jpg">
+    <div class="profile_name">
+      <h1>Alex McDoom</h1>
+    </div>
+  </div>
+  <div class="p_datebox content">
+    <p>{{date}}</p>
+  </div>
+  <div class="p_content content">
+    <p>
+      Username: Alex<br />
+      ID: 620025254<br />
+      Sex: Male<br />
+      Age: 23<br />
+      Highest Score: 10 000<br />
+      TDollars: 1 000 000<br />
+    </p>
+  </div>
+</div>
+{% endblock %}

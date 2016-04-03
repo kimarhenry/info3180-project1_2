@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+<div class="div_cb">
+  <h1>NEW PROFILE</h1>
+  <p>Enter details below:</p>
+  <hr />
+  <form action="{{ url_for('profile') }}" method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    username:<br /> {{ form.username }}<br />
+    email:<br /> {{ form.email }}<br />
+    <!--image: <br />-->
+    image:<br /> {{ form.image }}<br />
+    first name:<br /> {{ form.fname }}<br />
+    last name:<br /> {{ form.lname }}<br />
+    age:<br /> {{ form.age }}<br />
+    sex:<br /> {{ form.sex }}<br />
+    <input type="submit" />
+    <!--<h1>CONTACT FORM</h1>
+    <h3>Fill in this form to contact the site owners.</h3>
+    <h4>Name</h4>
+    <label>Please enter your full name</label>
+    <input class="inp_txt" type="text" name="name" autofocus />
+    <h4>E-Mail</h4>
+    <label>Please enter your email address</label>
+    <input class="inp_txt" type="email" name="email" />
+    <h4>Subject</h4>
+    <!--<label>Please enter your full name</label>--
+    <input class="inp_txt" type="text" name="subject" />
+    <h4>Message</h4>
+    <label>Please enter the message you wish to send</label>
+    <textarea name="message"></textarea>
+    <input class="btn_submit" type="submit" name="submit" value="Submit" />-->
+  </form>
+</div>
+{% endblock %}
